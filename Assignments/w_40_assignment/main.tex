@@ -1,0 +1,104 @@
+\documentclass[fullpage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+\usepackage{natbib}
+
+
+\setlength{\parindent}{4em}
+
+
+	\addtolength{\oddsidemargin}{-1in}
+	\addtolength{\evensidemargin}{-1in}
+	\addtolength{\textwidth}{1.9in}
+	\addtolength{\topmargin}{-1.5in}
+	\addtolength{\textheight}{1.9in}
+
+
+\title{An analysis into Machine Learning Algorithms in the Biomedical Field}
+\author{Bogdan Muntean}
+\date{October 2019}
+
+
+\begin{document}
+\maketitle
+
+% Abstract %
+\begin{abstract}
+This paper analyses the differences between three articles that are exploring the feasibility of using Machine Learning algorithms in the biomedical field. It argues that though technological advancements are made, conclusions need to be drawn with extreme attention in regards to if and where such algorithms should be used. The article shows how different fields require different metrics to measure the performance of Machine Learning algorithms. 
+Lastly, it emphasizes the impact that normalization techniques have over datasets and especially the fact that just because the algorithm is not capable of accounting for different sources of input, these sources should not be ignored. These realizations help understand that (a) there are still gaps in the implementation of Machine Learning algorithms in the biomedical field and (b) that metrics should be chosen carefully.
+\end{abstract}
+
+\begin{multicols}{2}
+% Introduction %
+\section{Introduction}
+Machine Learning (ML) is an important area for the development and creation of new methods and activities that support the advancement of computing systems. Major companies are currently developing their versions of ML algorithms with the purpose of solving existing problems of our century. IBM’s Watson, Elon Musk’s OpenAI and advances in the development of autonomous vehicles \cite{IDA2017} are all examples of ML implementations that are raising awareness of ML in public discourse.
+
+Naturally, educational institutions and private companies alike are exploring the benefits of ML in healthcare such as medical imaging tasks, including diabetic retinopathy detection \cite{Gulshan2016}. Due to large amounts of data and a current system where many manual processes still occur, ML has been identified as a beneficial addition to the healthcare sector\cite{RWBOMLH}.
+
+Radiology of the thorax has been identified as a potential healthcare area where machine learning can be useful \cite{Rajpurkar}. In Rajpurkar et al.\cite{Rajpurkar} researches applied ML to a dataset of x-rays and proved that it can identify up to 14 different pathologies. It also raises questions about work processes and the data needed for such work.
+
+The rest of the paper will describe the methods used in section II, section III presents the advancements and limitations of ML in the healthcare sector. Section IV addresses the comparison between commonly used metrics  when measuring ML algorithms versus metrics that are used in the medical field. Section V analyses the current facts and section VI concludes the paper.
+% Methods %
+\section{Methods}
+This study is a meta-analysis between three main articles: Rajpurkar et al. \cite{Rajpurkar}, Sokolova et al. \cite{Sokolova2006} and Strøm et al. \cite{Strom2018}. The general consensus is that with larger datasets and over a longer period of time, the assessment of benefits/drawbacks of ML in the medical field, alongside with a new view over performance metrics will surface.
+Therefore, document analysis, enhanced by the exploration of cited references from the aforementioned papers will be the primary approach to this paper. 
+
+This takes a similar approach as Strøm et al. has to constructing their article and is building on the work of health research innovation and workplace studies in healthcare \cite{Engestro}. It also raises awareness that though such studies do indeed show some applicability in the healthcare system, the proposed designs are technocentric and therefore are making a series of positivist approaches, leading to inaccurate measurements \cite{Strom2018}.
+
+This analysis explores a couple of recurring themes - choosing of appropriate algorithms/metrics and minimizing the amount of inputs in order to facilitate a timely output \cite{Rajpurkar}. With that in mind, this paper concludes by stating that further analysis is necessary and that though x-rays are one of the best methods of diagnosing pneumonia \cite{WHO.2001}, more attention should be paid to the processes and work ethics developed and followed by experienced radiologists \cite{Strom2018} 
+% Machine Learning in Healthcare %
+\section{Machine Learning in Healthcare}
+With the latest advancements in ML, we are now able to solve problems that otherwise would be impossible to solve by using ML models and algorithms on large datasets \cite{Ng2016}. Researchers have produced impressive results \cite{Wang} and in some cases even outperformed human specialists, e.g, classified as examples of presence or absence of the attribute used for classification, in a process called supervised learning \cite{Rajpurkar}.
+
+Rajpurkar et al. \cite{Rajpurkar} constructed a 121-layer convolutional neural network that was trained on over 100000 samples of frontal chest x-rays in a supervised learning setting. However, such research is (a) focusing on a narrow task \cite{Strom2018} and (b) makes use of multiple normalization techniques to make the model ‘tractable’ \cite{Rajpurkar}. The radiologists involved in the test had no access to patient records or any other information than a frontal chest x-ray on the basis that patient history decreases the performance of interpreting chest x-rays \cite{Rajpurkar}.
+
+While ML will, in time, prove to be an enormous aid in healthcare, it is still in at an experimental stage \cite{Rajpurkar}, \cite{Wang}. The above examples are meant to illustrate the usefulness of ML in healthcare, yet the use of such techniques can raise ethical concerns, regarding the size of the dataset, which data material to use, false positives and data which is not used \cite{RWBOMLH}.	
+
+% ML metrics vs. Biomedical Metrics %
+\section{ML metrics vs. Biomedical Metrics}
+As this analysis is focused on the three articles mentioned in the introduction, it is important to assess the commonly accepted performance evaluation metrics and the ones that are used more prevalent in the biomedical field as suggested by Sokolova et al. \cite{Sokolova2006}
+
+Sokolova et al. notices that the vast majority of ML research is focused on settings where the examples are identically and independently distributed (IID). Therefore the most used empirical measure is accuracy. But since in the medical field we are interested in classes that weigh the same (a true-positive is just as relevant as a true-negative), other metrics are ought to be considered such as Youden’s index, likelihood and discriminant power.
+
+\textbf{Youden's index} represents the avoidance of failure which complements accuracy, or the ability to correctly label examples. Meaning that Youden's index evaluates the algorithm's ability to avoid failure \cite{Sokolova2006}, \cite{Youden}
+
+\textbf{Likelihoods} is a metric that accommodates both sensitivity and specificity, yet it treats the two separately - allowing us to evaluate the classifier's performance to finer degree with respect to both classes.
+
+\textbf{Discriminant power} evaluates how well an algorithm distinguishes between positive and negative examples. Sokolova et al. \cite{Sokolova2006} goes on to describe a relationship between Youden's index, likelihoods and discriminant power, providing compelling reasons of (a) being able to calculate the three metrics with the help of currently used metrics in ML and (b) making a case of why these three metrics are so important - taking into account classes being equally important, sensitivity and specificity and how well the algorithm performs in identifying positive and negative values.
+
+This is not to disprove current work in the field but to encourage further analysis while taking into consideration the aforementioned \cite{Strom2018}.
+% Analysis %
+\section{Analysis}
+In this paper there are a couple of recurring themes. First, theme has to do with the ability to choose the right metrics/algorithms to properly deduce a model. Based on the work of Sokolova et al. \cite{Sokolova2006} and Strøm et al. \cite{Strom2018} it is implied that because a ML algorithm shows promise, it does not directly translate into its efficiency. Strøm et al. \cite{Strom2018} goes on to point out that it is because of wrong metrics, the analysis might lead to inappropriate conclusions, and therefore a flawed model.
+
+Moreover, the process of determining which metrics are to be used as means of assessing the model is just as important as selecting the appropriate ML algorithm itself \cite{Sokolova2006}. Sokolova et al. encourages the idea of considering metrics based on the field that the research is conducted in. Strøm et al.\cite{Strom2018} points out that Rajpurkar et al.\cite{Rajpurkar} model requires future iterations because the dataset is assumed to be identically and independently distributed (IDD) - subjecting it to common ML metrics, yet using the model on a different population, therefore different datasets does nullify this hypothesis \cite{Sokolova2006}.
+
+Exploring the first theme, does show that while the algorithm developed by Rajpurkar et al. \cite{Rajpurkar} is efficient when taking into consideration Commonly used ML metrics \cite{Sokolova2006}, a reassessment of the efficiency of the algorithm is needed and therefore the use of metrics that are relevant to the  biomedical field is preferred \cite{Sokolova2006}, \cite{Strom2018}.
+
+The second theme is analyzing what data is available versus the amount of data  that is being entered in the algorithm to create a tractable model and a timely output \cite{Rajpurkar}.
+
+Keeping in mind that the most effective applications of ML algorithms outside academia have been applications of supervised learning - solving classification problems \cite{Ng2016} - it is imperative to understand that a series of normalization activities were performed by Rajpurkar et al. to make the model tractable \cite{Rajpurkar}. These activities while they aid the model, as the interviews from Strøm et al. \cite{Strom2018} pointed out - it does not reflect the real world process of diagnosing a pathology and it does not support the claim that just by looking at a frontal view of a thorax x-ray one can accurately diagnose a patient.
+
+The images of the chest x-rays were only frontal images - no profile images - and were down-scaled to a 224x224 pixels to increase performance \cite{Rajpurkar}. Rajpukar et al. goes on to say that the decision of not allowing access to patient information for the model, as well as for the radiologists that were participating in the study was deliberate and is supported by a claim that Berbaum et al. \cite{K1985} made - “patient history, has been shown to decrease radiologist diagnostic performance in interpreting chest radiography's” - Claim which is not entirely true. What Berbaum et al. \cite{K1985} was suggesting is that radiologists with various amount of experience will perform better with different levels of image quality. He goes on to say that radiologists which have less experience are sometimes influenced by patient history.
+
+Lastly, Rajpurkar et al. \cite{Rajpurkar} makes assumptions and draws conclusions from the scientific paper that has created the dataset, Wang et al. \cite{Wang}. However, Wang et al. \cite{Wang} states that using a neural network to create a model that labels chest x-rays and localizes the area where the pathology is present remains a strenuous task and that in the future they plan on extending the dataset to include patient history and other relevant information so that the creation of a neural network model can become feasible.
+
+% Conclusion %
+\section{Conclusion}
+This paper analysis three research papers in particular: Rajpurkar et al. \cite{Rajpurkar}, Sokolova et al. \cite{Sokolova2006} and Strøm et al. \cite{Strom2018}. All these papers are exploring the possibility of applying machine learning-based technologies in the biomedical field. 
+
+However, while Rajpurkar et al. \cite{Rajpurkar} creates a compelling ML model that is using chest x-rays imagery to determine diagnosis on a set of 14 pathologies - work of Wang et al \cite{Wang} - Strøm et al. \cite{Strom2018} points out that appropriate metrics are to be used when addressing the biomedical field. 
+
+Moreover, Strøm et al. \cite{} suggests a reassessment of the developed model by Rajpurkar et al. \cite{Rajpurkar}, having in mind the work of Sokolova et al. \cite{Sokolova2006} 
+
+While technical advancements are being made in the biomedical department and while these advancements are facilitated by ML algorithms, practices and metrics, a more careful consideration is ought to be taken when such aspects are being explored.
+
+Strøm et al. \cite{Strom2018} encourages ML usage but in a supportive role, as human expertise is yet needed to take such important decisions that are depending on so many inputs.
+
+% References %
+
+\end{multicols}
+\bibliographystyle{plain}
+\bibliography{references.bib}
+\end{document}

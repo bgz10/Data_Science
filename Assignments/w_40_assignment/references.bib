@@ -1,0 +1,127 @@
+@article{IDA2017,
+journal = {IDA Univers},
+title = {{MACHINE LEARNING: BLIV KLOGERE P{\AA} TEKNOLOGIEN BAG KUNSTIG INTELLIGENS}},
+key = {1},
+author = {IDA Univers},
+year = {2017}
+}
+@misc{RWBOMLH,
+title = {{Real-World Benefits of Machine Learning in Healthcare}},
+key = {2},
+url = {https://www.healthcatalyst.com/clinical-applications-of-machine-learning-in-healthcare},
+urldate = {2019-10-10}
+}
+@techreport{Gevenois2001,
+abstract = {: Pneumonia is one of the major infectious diseases responsible for significant morbidity and mortality throughout the world. Imaging plays a crucial role in the detection and management of patients with pneumonia. This review article discusses the different imaging methods used in the diagnosis and management of suspected pulmonary infections. The imaging examination should always begin with conventional radiography. When the results of routine radiography are inconclusive, computed tomography is mandatory. A combination of pattern recognition with knowledge of the clinical setting is the best approach to the pulmonary infectious processes. A specific pattern of involvement can suggest a likely diagnosis in many instances. In acquired immune deficiency syndrome patients, diffuse ground-glass and interstitial infiltrates are most commonly present in Pneumocystis carinii pneumonia whereas in the nonimmunosuppressed patients, a segmental lobar infiltrate is suggestive of a bacterial pneumonia. Round pneumonia is most often encountered in children than adults and is most often caused by Streptococcus pneumoniae. Different combinations of parenchymal and pleural abnormalities may be suggestive for additional diagnoses. When an infectious pulmonary process is suspected, knowledge of the varied radiographic manifestations will narrow the differential diagnosis, helping to direct additional diagnostic measures, and serving as an ideal tool for follow-up examinations.},
+author = {Gevenois, A and Bankier, A and Sibille, Y and Franquet, T},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Gevenois et al. - Unknown - Number 5 in this Series.pdf:pdf},
+pages = {13},
+title = {{Imaging of Pneumonia: trends and algorithms}},
+year = {2001}
+}
+@article{Gulshan2016,
+abstract = {IMPORTANCE Deep learning is a family of computational methods that allow an algorithm to program itself by learning from a large set of examples that demonstrate the desired behavior, removing the need to specify rules explicitly. Application of these methods to medical imaging requires further assessment and validation. OBJECTIVE To apply deep learning to create an algorithm for automated detection of diabetic retinopathy and diabetic macular edema in retinal fundus photographs. DESIGN AND SETTING A specific type of neural network optimized for image classification called a deep convolutional neural network was trained using a retrospective development data set of 128 175 retinal images, which were graded 3 to 7 times for diabetic retinopathy, diabetic macular edema, and image gradability by a panel of 54 US licensed ophthalmologists and ophthalmology senior residents between May and December 2015. The resultant algorithm was validated in January and February 2016 using 2 separate data sets, both graded by at least 7 US board-certified ophthalmologists with high intragrader consistency. EXPOSURE Deep learning-trained algorithm. MAIN OUTCOMES AND MEASURES The sensitivity and specificity of the algorithm for detecting referable diabetic retinopathy (RDR), defined as moderate and worse diabetic retinopathy, referable diabetic macular edema, or both, were generated based on the reference standard of the majority decision of the ophthalmologist panel. The algorithm was evaluated at 2 operating points selected from the development set, one selected for high specificity and another for high sensitivity. RESULTS The EyePACS-1 data set consisted of 9963 images from 4997 patients (mean age, 54.4 years; 62.2{\%} women; prevalence of RDR, 683/8878 fully gradable images [7.8{\%}]); the Messidor-2 data set had 1748 images from 874 patients (mean age, 57.6 years; 42.6{\%} women; prevalence of RDR, 254/1745 fully gradable images [14.6{\%}]). For detecting RDR, the algorithm had an area under the receiver operating curve of 0.991 (95{\%} CI, 0.988-0.993) for EyePACS-1 and 0.990 (95{\%} CI, 0.986-0.995) for Messidor-2. Using the first operating cut point with high specificity, for EyePACS-1, the sensitivity was 90.3{\%} (95{\%} CI, 87.5{\%}-92.7{\%}) and the specificity was 98.1{\%} (95{\%} CI, 97.8{\%}-98.5{\%}). For Messidor-2, the sensitivity was 87.0{\%} (95{\%} CI, 81.1{\%}-91.0{\%}) and the specificity was 98.5{\%} (95{\%} CI, 97.7{\%}-99.1{\%}). Using a second operating point with high sensitivity in the development set, for EyePACS-1 the sensitivity was 97.5{\%} and specificity was 93.4{\%} and for Messidor-2 the sensitivity was 96.1{\%} and specificity was 93.9{\%}. CONCLUSIONS AND RELEVANCE In this evaluation of retinal fundus photographs from adults with diabetes, an algorithm based on deep machine learning had high sensitivity and specificity for detecting referable diabetic retinopathy. Further research is necessary to determine the feasibility of applying this algorithm in the clinical setting and to determine whether use of the algorithm could lead to improved care and outcomes compared with current ophthalmologic assessment.},
+author = {{Gulshan, Varun and Peng, Lily and Coram, Marc and Stumpe, Martin C and Wu, Derek and Narayanaswamy, Arunachalam and Venugopalan, Subhashini and Widner, Kasumi and Madams, Tom and Cuadros, Jorge and Kim, Ramasamy and Raman, Rajiv and Nelson, Philip C and Mega, Jessica L and Webster, Dale R}},
+doi = {10.1001/jama.2016.17216},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Gulshan et al. - 2016 - Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus.pdf:pdf},
+keywords = {The JAMA Network},
+title = {{Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs Editorial Supplemental content}},
+url = {http://jamanetwork.com/},
+year = {2016},
+key = {3}
+}
+@techreport{Huang2018,
+abstract = {Recent work has shown that convolutional networks can be substantially deeper, more accurate, and efficient to train if they contain shorter connections between layers close to the input and those close to the output. In this paper, we embrace this observation and introduce the Dense Convo-lutional Network (DenseNet), which connects each layer to every other layer in a feed-forward fashion. Whereas traditional convolutional networks with L layers have L connections-one between each layer and its subsequent layer-our network has L(L+1) 2 direct connections. For each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters. We evaluate our proposed architecture on four highly competitive object recognition benchmark tasks (CIFAR-10, CIFAR-100, SVHN, and ImageNet). DenseNets obtain significant improvements over the state-of-the-art on most of them, whilst requiring less computation to achieve high performance. Code and pre-trained models are available at https://github.com/liuzhuang13/DenseNet.},
+archivePrefix = {arXiv},
+arxivId = {1608.06993v5},
+author = {Huang, Gao and Liu, Zhuang and {Van Der Maaten}, Laurens and Weinberger, Kilian Q},
+eprint = {1608.06993v5},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Huang et al. - Unknown - Densely Connected Convolutional Networks.pdf:pdf},
+title = {{Densely Connected Convolutional Networks}},
+url = {https://github.com/liuzhuang13/DenseNet.},
+year = {2018}
+}
+@techreport{Ioffe2015,
+abstract = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlineari-ties. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normal-ization a part of the model architecture and performing the normalization for each training mini-batch. Batch Nor-malization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regu-larizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9{\%} top-5 validation error (and 4.8{\%} test error), exceeding the accuracy of human raters.},
+archivePrefix = {arXiv},
+arxivId = {1502.03167v3},
+author = {Ioffe, Sergey and Szegedy, Christian},
+eprint = {1502.03167v3},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Ioffe, Szegedy - 2015 - ().pdf:pdf},
+keywords = {()},
+title = {{Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift}},
+year = {2015}
+}
+@techreport{Rajpurkar,
+abstract = {We develop an algorithm that can detect pneumonia from chest X-rays at a level exceeding practicing radiologists. Our algorithm , CheXNet, is a 121-layer convolutional neural network trained on ChestX-ray14, currently the largest publicly available chest X-ray dataset, containing over 100,000 frontal-view X-ray images with 14 diseases. Four practicing academic radiologists annotate a test set, on which we compare the performance of CheXNet to that of radiologists. We find that CheXNet exceeds average ra-diologist performance on the F1 metric. We extend CheXNet to detect all 14 diseases in ChestX-ray14 and achieve state of the art results on all 14 diseases.},
+archivePrefix = {arXiv},
+arxivId = {1711.05225v3},
+author = {Rajpurkar, Pranav and Irvin, Jeremy and Zhu, Kaylie and Yang, Brandon and Mehta, Hershel and Duan, Tony and Ding, Daisy and Bagul, Aarti and Ball, Robyn L and Langlotz, Curtis and Shpanskaya, Katie and Lungren, Matthew P and Ng, Andrew Y},
+eprint = {1711.05225v3},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Rajpurkar et al. - Unknown - CheXNet Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning.pdf:pdf},
+title = {{CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning}},
+url = {https://stanfordmlgroup.}
+}
+@techreport{Sokolova2006,
+abstract = {Different evaluation measures assess different characteristics of machine learning algorithms. The empirical evaluation of algorithms and classifiers is a matter of ongoing debate between researchers. Although most measures in use today focus on a classifier's ability to identify classes correctly, we suggest that, in certain cases, other properties, such as failure avoidance or class discrimination may also be useful. We suggest the application of measures which evaluate such properties. These measures-Youden's index, likelihood , Discriminant power-are used in medical diagnosis. We show that these measures are interrelated, and we apply them to a case study from the field of electronic negotiations. We also list other learning problems which may benefit from the application of the proposed measures.},
+author = {Sokolova, Marina and Japkowicz, Nathalie and Szpakowicz, Stan},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Sokolova, Japkowicz, Szpakowicz - 2006 - Beyond Accuracy, F-score, and ROC A Family of Discriminant Measures for Performance Evaluation.pdf:pdf},
+keywords = {American Association for Artificial Intelligence. ,Copyright {\textcopyright}2006},
+title = {{Beyond Accuracy, F-score, and ROC: A Family of Discriminant Measures for Performance Evaluation}},
+url = {www.aaai.org},
+year = {2006}
+}
+@article{Strom2018,
+abstract = {Abstract—In this pilot study data gathered from interviewing specialists in radiology is combined with an assessment of the way machine learning metrics are used in studies of radiological work. It argues that situated context of use should be an important contributor to the design of machine learning applications in radiology. The article shows how radiologists see their professional practice as utilizing a wider range of expert knowledge than many existing studies on machine learning in radiology allow for. The article describes a case study drawn from radiology practice in a major Danish hospital and discusses a widely cited study on machine learning in radiological work. The study connects current understandings of appropriate metrics used by machine learning researchers with professional radiologists' understanding of their diagnostic work. This comparison helps identify gaps in understanding between these two communities and suggests how they might be addressed.},
+author = {Str{\o}m, Henrik and Albury, Steven and S{\o}rensen, Lene},
+file = {:Users/{\_}bogz{\_}/Desktop/kea-public-datascience-2019-2/week40/Str{\o}m, Albury, and S{\o}rensen 2018.pdf:pdf},
+keywords = {diagnostic context,machine learning,metrics,radiology},
+mendeley-tags = {diagnostic context,machine learning,metrics,radiology},
+pages = {6},
+title = {{Machine Learning Performance Metrics and Diagnostic Context in Radiology}},
+year = {2018}
+}
+@techreport{WHO.2001,
+author = {WHO.},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Unknown - 2001 - Standardization of interpretation of chest radiographs for the diagnosis of pneumonia in children DEPARTMENT OF VACCINE.pdf:pdf},
+title = {{Standardization of interpretation of chest radiographs for the diagnosis of pneumonia in children DEPARTMENT OF VACCINES AND BIOLOGICALS i i}},
+url = {www.who.int/vaccines-documents/},
+year = {2001}
+}
+@techreport{Engestro,
+abstract = {Cultural ±historical activity theory is a new framework aimed at transcending the dichotomies of micro-and macro-, mental and material, observation and intervention in analysis and redesign of work. The approach distinguishes between short-lived goal-directed actions and durable, object-oriented activity systems. A historically evolving collective activity system, seen in its network relations to other activity systems, is taken as the prime unit of analysis against which scripted strings of goal-directed actions and automatic operations are interpreted. Activity systems are driven by communal motives that are often di cult to articulate for individual participants. Activity systems are in constant movement and internally contradictory. Their systemic contradictions, manifested in disturbances and mundane innovations, o er possibilities for expansive developmental transformations. Such transformations proceed through stepwise cycles of expansive learning which begin with actions of questioning the existing standard practice, then proceed to actions of analyzing its contradictions and modelling a vision for its zone of proximal development, then to actions of examining and implementing the new model in practice. N ew forms of work organization increasingly require negotiated`knotworkingnegotiated`knotworking' across boundaries. Correspondingly, expansive learning increasingly involves horizontal widening of collective expertise by means of debating, negotiating and hybridizing dii erent perspectives and conceptualizations. F indings from a longitudinal intervention study of children's medical care illuminate the theoretical arguments.},
+author = {Engestro, Yrjo {\`{E}}},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Engestro - Unknown - Activity theory as a framework for analyzing and redesigning work.pdf:pdf},
+keywords = {Activity theory,D evelopmental work research,Expansive learning},
+title = {{Activity theory as a framework for analyzing and redesigning work}},
+url = {http://www.tandf.co.uk/journals}
+}
+@techreport{Ng2016,
+author = {Ng, Andrew},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Ng - 2016 - What Artificial Intelligence Can and Can't Do Right Now.pdf:pdf},
+mendeley-groups = {Assignment{\_}Individual},
+title = {{What Artificial Intelligence Can and Can't Do Right Now}},
+url = {https://hbr.org/2016/11/what-artificial-intelligence-can-and-cant-...},
+year = {2016}
+}
+@techreport{Wang,
+abstract = {The chest X-ray is one of the most commonly accessible radiological examinations for screening and diagnosis of many lung diseases. A tremendous number of X-ray imaging studies accompanied by radiological reports are accumulated and stored in many modern hospitals' Picture Archiving and Communication Systems (PACS). On the other side, it is still an open question how this type of hospital-size knowledge database containing invaluable imaging informatics (i.e., loosely labeled) can be used to facilitate the data-hungry deep learning paradigms in building truly large-scale high precision computer-aided diagnosis (CAD) systems. In this paper, we present a new chest X-ray database, namely "ChestX-ray8", which comprises 108,948 frontal-view X-ray images of 32,717 unique patients with the text-mined eight disease image labels (where each image can have multi-labels), from the associated radiological reports using natural language processing. Importantly, we demonstrate that these commonly occurring thoracic diseases can be detected and even spatially-located via a unified weakly-supervised multi-label image classification and disease lo-calization framework, which is validated using our proposed dataset. Although the initial quantitative results are promising as reported, deep convolutional neural network based "reading chest X-rays" (i.e., recognizing and locating the common disease patterns trained with only image-level labels) remains a strenuous task for fully-automated high precision CAD systems.},
+author = {Wang, Xiaosong and Peng, Yifan and Lu, Le and Lu, Zhiyong and Bagheri, Mohammadhadi and Summers, Ronald M},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Wang et al. - Unknown - ChestX-ray8 Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localizat.pdf:pdf},
+mendeley-groups = {Assignment{\_}Individual},
+title = {{ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases}},
+url = {https://uts.nlm.nih.gov/metathesaurus.html}
+}
+@techreport{Youden,
+author = {Youden, W J},
+file = {:Users/{\_}bogz{\_}/Library/Application Support/Mendeley Desktop/Downloaded/Youden - Unknown - INDEX FOR RATING DIAGNOSTIC TESTS.pdf:pdf},
+mendeley-groups = {Assignment{\_}Individual},
+title = {{INDEX FOR RATING DIAGNOSTIC TESTS}}
+}
+@article{K1985,
+author = {K, Berbaum and Jr, Franken EA and WL, Smith},
+mendeley-groups = {Assignment{\_}Individual},
+title = {{The Effect of Comparison Films Upon Resident Interpretation of Pediatric Chest Radiography}},
+year = {1985}
+}
+
